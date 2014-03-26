@@ -7,9 +7,9 @@ The fixed files can then easily be used in Jmol.
 
 ## Features :
 
- - Available in webserver form so no installation needed
+ - Available in webserver form so no installation needed, unless you have A LOT of files to convert
  - command line version allows single files or entire folders of PDB files to be converted automagically.
- - conforms to PDB format as described [here][2] and [here][3]
+ - conforms to PDB format specifications as described [here][2] and [here][3]
 
 ##Webserver
 [fomightez.pythonanywhere.com/spartan_fixer/][webserver]
@@ -17,7 +17,7 @@ The fixed files can then easily be used in Jmol.
 
 ## Usage :
 
-###MANUAL/HELP OPTION
+###MANUAL/HELP OPTION for command line version
 
 $ `python SPARTAN08_Fixer.py --help`
 
@@ -61,7 +61,24 @@ $ `python SPARTAN08_Fixer.py --help`
                       the defaults of 'A' and '1', respectively, for
                       those values if none provided.
 
-### typical examples
+### typical examples of use of command line version
+#### Typical run
+$ `python SPARTAN08_Fixer.py spartanPDBfile.pdb`
+
+You'll be prompted to enter chain identifier designation and a number at which to start the residue numbering.
+
+#### Typical run, specifying the options at the command line
+$ `python SPARTAN08_Fixer.py spartanPDB.pdb --ChainDesig G --StartNo 7`
+
+
+#### Running on PDB files in a directory
+$ `python SPARTAN08_Fixer.py TheDirectory`
+
+#### Running on PDB files in a directory with default settings without prompts
+$ `python SPARTAN08_Fixer.py TheDirectory --auto`
+
+#### Running on PDB files in a directory using command line to designate values
+$ `python SPARTAN08_Fixer.py TheDirectory --ChainDesig Z --StartNo 16`
 
 
 ## Development
