@@ -82,7 +82,7 @@ $ `python SPARTAN08_Fixer.py TheDirectory --ChainDesig Z --StartNo 16`
 
 
 ## Development
-Developed by Wayne Decatur in collaboration with Nick Greeves ((@nickgreeves)[https://twitter.com/nickgreeves])  and Rui Li.
+Developed by Wayne Decatur in collaboration with Nick Greeves ([@nickgreeve](https://twitter.com/nickgreeves)) and Rui Li.
 
 [home]: https://github.com/fomightez/spartan_fixer
 [webserver]: http://fomightez.pythonanywhere.com/spartan_fixer/
